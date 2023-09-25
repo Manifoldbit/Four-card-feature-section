@@ -10,7 +10,8 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -35,22 +36,27 @@ img {
   text-align: center;
   padding: 2em 0;
 }
+
 .content__text .reliable {
   font-weight: lighter;
 }
+
 .content__text .power {
   margin-bottom: 0.3em;
 }
+
 .content__flex {
   padding: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .content__flex__row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .content__flex__row .row {
   margin: 9.5em 0;
   width: 39%;
@@ -58,19 +64,23 @@ img {
   background-color: #fff;
   padding: 1.5em 0 0 1.5em;
 }
+
 .content__flex__row .cyan {
   border-top: 3px solid hsl(180, 62%, 55%);
   border-radius: 0.3em;
 }
+
 .content__flex__row .blue {
   border-top: 3px solid hsl(212, 86%, 64%);
   border-radius: 0.3em;
 }
+
 .content__flex__col {
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
+
 .content__flex__col .col {
   padding: 1.5em 0 1.5em 1.5em;
   box-shadow: 0.625rem 0.625rem 0.3125rem 0rem hsla(0, 0%, 0%, 0.05);
@@ -78,10 +88,12 @@ img {
   width: 80%;
   margin: 0 auto;
 }
+
 .content__flex__col .orange {
   border-top: 3px solid hsl(34, 97%, 64%);
   border-radius: 0.3em;
 }
+
 .content__flex__col .red {
   border-top: 3px solid hsl(0, 78%, 62%);
   border-radius: 0.3em;
@@ -91,7 +103,6 @@ img {
 .calculator-img,
 .karma-img,
 .team__builder-img {
-  border: 2px solid yellow;
   margin: 18% 0 0 72%;
 }
 
@@ -101,37 +112,48 @@ img {
     width: 90%;
     padding: 2em 0;
   }
+
   .content__text .reliable {
     font-size: 1.5em;
     margin-bottom: 0.3em;
   }
+
   .content__text .power {
     font-size: 1.5em;
   }
+
   .content__flex {
     padding: 2em 1em;
   }
+
   .content__flex__row {
     flex-direction: column;
   }
+
   .content__flex__row .row {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 1em;
   }
+
   .content__flex__row .col {
     width: 100%;
   }
+
   .content__flex__row .red {
     margin-top: 2em;
   }
+
   .content__flex__row .orange {
     margin-bottom: 2em;
   }
+
   .supervisor-img,
   .calculator-img,
   .karma-img,
   .team__builder-img {
     margin: 18% 0 0 72%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
