@@ -10,7 +10,7 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
-h1, h2, p {
+h1, h2 {
   margin: 0;
 }
 
@@ -18,40 +18,42 @@ h2 {
   font-weight: bolder;
 }
 
+p {
+  line-height: 1.5em;
+  width: 90%;
+}
+
 img {
   max-width: 100%;
   display: block;
 }
 
-.container {
-  border: 3px solid red;
-}
-
-.content {
-  border: 3px solid green;
-}
 .content__text {
-  border: 3px solid yellow;
   width: 50%;
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  padding: 2em 0;
+}
+.content__text .reliable {
+  font-weight: lighter;
+}
+.content__text .power {
+  margin-bottom: 0.3em;
 }
 .content__flex {
-  border: 3px solid black;
   padding: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
 .content__flex__row {
-  border: 3px solid yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .content__flex__row .row {
   margin: 9.5em 0;
-  width: 31%;
+  width: 39%;
   box-shadow: 0.625rem 0.625rem 0.3125rem 0rem hsla(0, 0%, 0%, 0.05);
   background-color: #fff;
   padding: 1.5em 0 0 1.5em;
@@ -65,15 +67,16 @@ img {
   border-radius: 0.3em;
 }
 .content__flex__col {
-  width: 31%;
   display: flex;
   flex-direction: column;
   gap: 2em;
 }
 .content__flex__col .col {
-  padding: 0 0 2.5em 0;
+  padding: 1.5em 0 1.5em 1.5em;
   box-shadow: 0.625rem 0.625rem 0.3125rem 0rem hsla(0, 0%, 0%, 0.05);
   background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
 }
 .content__flex__col .orange {
   border-top: 3px solid hsl(34, 97%, 64%);
@@ -89,5 +92,46 @@ img {
 .karma-img,
 .team__builder-img {
   border: 2px solid yellow;
-  margin: 25% 0 0 72%;
+  margin: 18% 0 0 72%;
+}
+
+/* Mobile view */
+@media screen and (max-width: 500px) {
+  .content__text {
+    width: 90%;
+    padding: 2em 0;
+  }
+  .content__text .reliable {
+    font-size: 1.5em;
+    margin-bottom: 0.3em;
+  }
+  .content__text .power {
+    font-size: 1.5em;
+  }
+  .content__flex {
+    padding: 2em 1em;
+  }
+  .content__flex__row {
+    flex-direction: column;
+  }
+  .content__flex__row .row {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+  .content__flex__row .col {
+    width: 100%;
+  }
+  .content__flex__row .red {
+    margin-top: 2em;
+  }
+  .content__flex__row .orange {
+    margin-bottom: 2em;
+  }
+  .supervisor-img,
+  .calculator-img,
+  .karma-img,
+  .team__builder-img {
+    margin: 18% 0 0 72%;
+  }
 }/*# sourceMappingURL=style.css.map */
